@@ -1,188 +1,96 @@
-
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>Viajes Chile</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    </head>
-    <body>
-        <header class="navbar navbar-expand-lg navbar-dark bg-dark align-items-center">
-         <div class="container">
-            <a class="navbar-brand" href="#">Ricomida</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Quienes somos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Destacados</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
-                </ul>
-            </div>
-        </div>
-        </header>
-        <main>
-            <div class="container mb-4">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12">
-                        <img src="assets/img/principal.jpg" class="d-block w-100" alt="Pizza">
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <div class="row mb-4">
-                            <h1 class="main-title mt-4 mb-4">Pizza al estilo Chicago con espinacas y champiñones</h1>
-                        </div>
-                        <div class="custom-hr"></div>
-                        <div class="row mb-4">
-                            <h3 class="subtitle">110 MIN / 6 A 8 PORCIONES</h3>
-                        </div>
-                        <div class="button-row mb-4">
-                            <button class="btn-custom-w">Enviar por correo</button>
-                            <button class="btn-custom-w">Añadir a favoritos</button>
-                            <button class="btn-custom-triangle">Agrega esta receta a tus favoritos</button>
-                        </div>
-
-                        <div class="row button-row">
-                            <div class="col-12">
-                                <button class="btn-custom-b" id="enviarCorreo" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to send email" class="btn btn-primary">
-                                    Presiona para enviar a tu correo
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="container mb-4 carousel-container">
-            <div class="carousel slide d-sm-block mb-4" id="recipeCarousel" data-bs-ride="carousel">
-                <div class="carousel-inner mb-4">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col"><img src="assets/img/slider-1.png" class="d-block w-100" alt="Imagen 1"></div>
-                            <div class="col"><img src="assets/img/slider-2.png" class="d-block w-100" alt="Imagen 2"></div>
-                            <div class="col"><img src="assets/img/slider-3.png" class="d-block w-100" alt="Imagen 3"></div>
-                            <div class="col"><img src="assets/img/slider-4.png" class="d-block w-100" alt="Imagen 4"></div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col"><img src="assets/img/slider-5.png" class="d-block w-100" alt="Imagen 5"></div>
-                            <div class="col"><img src="assets/img/slider-6.png" class="d-block w-100" alt="Imagen 6"></div>
-                            <div class="col"><img src="assets/img/slider-7.png" class="d-block w-100" alt="Imagen 7"></div>
-                            <div class="col"><img src="assets/img/slider-8.png" class="d-block w-100" alt="Imagen 8"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center carousel-controls-custom carousel-container">
-                   <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#recipeCarousel" role="button" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="container custom-hr mb-4 mt-4"></div>
-        <div class="container mb-4">
-            <div class="row mb-4">
-                <div class="col-lg-6 col-md-12">
-                    <h2 class="section-title">INGREDIENTES</h2>
-                    <ul class="ingredients-list">
-                      <div class="ingredients-list">
-                        <p class="section-header mb-4">Masa</p>
-                        <p>20 gr de levadura seca instantánea</p>
-                        <p>1 cucharadita de azúcar</p>
-                        <p>500 ml agua tibia</p>
-                        <p>100 ml aceite vegetal</p>
-                        <p>4 cucharadas de aceite de oliva</p>
-                        <p>65 gr harina de maíz fina (chuchoca)</p>
-                        <p>2 cucharaditas de sal</p>
-                        <p class="mb-4">625 gr harina</p>
-                        <p class="section-header mb-4">Salsa</p>
-                        <p>5 cucharadas de aceite de oliva</p>
-                        <p>½ cebolla picada en cubos finos</p>
-                        <p>2 cucharaditas de sal</p>
-                        <p>3 cucharadas de Orégano Gourmet</p>
-                        <p>1 ½ cucharadas de Albahaca Gourmet</p>
-                        <p>2 tarro de tomates en cubos al natural</p>
-                        <p>2 cucharaditas de azúcar Relleno</p>
-                        <p>½ cebolla, en cubos</p>
-                      </div>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                    <h2 class="section-title mb-4">PREPARACIÓN</h2>
-                    <div class="preparation-steps"></div>
-                </div>
-            </div>
-        </div>
-        <div class="container custom-hr mb-4 mt-4"></div>
-        <div class="container">
-            <h2 class="mb-4" id="section-title">RECETAS RELACIONADAS</h2>
-            <div class="row row-card">
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="card">
-                        <img src="assets/img/recipe-card-1.png" class="card-img-top" alt="Descripción de imagen1">
-                        <div class="card-body">
-                            <h5 class="card-title">Panqueques con Manjar y Crema</h5>
-                            <p class="card-text">Mus enim elementum dignissim class eleifend justo...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="card">
-                        <img src="assets/img/recipe-card-2.png" class="card-img-top" alt="Descripción de imagen2">
-                        <div class="card-body">
-                            <h5 class="card-title">Tiramisú</h5>
-                            <p class="card-text">Congue fermentum dignissim rhoncus elementum...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="card">
-                        <img src="assets/img/recipe-card-3.png" class="card-img-top" alt="Descripción de imagen3">
-                        <div class="card-body">
-                            <h5 class="card-title">Plateada</h5>
-                            <p class="card-text">Cubilia elementum posuere arcu rhoncus egestas lectus...</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </main>
-
-        <footer class="footer mt-4 mb-4">
-          <div class="container-fluid mt-4">
-            <div class="container mt-4">
-              <div class="row">
-                  <div class="col-12 text-center">
-                      <h2 class="footer-title">SUSCRÍBETE EN NUESTRO NEWSLETTER</h2>
-                      <p class="footer-subtitle">y obtén las mejores recetas que tenemos en <span class="footer-highlight">Ricomida</span></p>
-                      <button class="footer-button mb-4">Empezar</button>
-                  </div>
+<head>
+    <meta charset="UTF-8">
+    <title>Viajes Chile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+          <div class="container">
+              <!-- Brand and toggle  / Logo  -->
+              <a class="navbar-brand" href="#">
+                  <img src="assets/img/viajes.svg" alt="Logo" style="height:30px;"> <!-- Ensure the path and filename are correct -->
+                  Viajes Chile
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto">
+                      <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#quienes-somos">Quienes Somos</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#destacados">Destacados</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                  </ul>
               </div>
-            </div>
-            <div class="sub-footer mt-4">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="sub-footer-name col-12 text-center aligh-content-center">
-                            <p class="sub-footer-text">Ricomida</p>
+          </div>
+      </nav>
+
+      <!-- Carousel seccion -->
+      <div id="headerCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="Image One">
+              </div>
+              <div class="carousel-item">
+                  <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="Image Two">
+              </div>
+              <div class="carousel-item">
+                  <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="Image Three">
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#headerCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#headerCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+  </header>
+
+    <main class="container mt-5 pt-5">
+        <section id="quienes-somos" class="my-5">
+            <h2>¿Quiénes Somos?</h2>
+            <p>Lorem ipsum dolor sit amet...</p>
+        </section>
+
+        <section id="destacados" class="my-5">
+            <h2>Destacados</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/img/destacado1.jpg" class="card-img-top" alt="Destacado 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Destacado 1</h5>
+                            <p class="card-text">Descripción breve del destacado.</p>
                         </div>
                     </div>
                 </div>
             </div>
-          </div>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/script.js"></script>
-    </body>
+        </section>
+        <section id="contacto" class="my-5">
+            <h2>Contacto</h2>
+            <form>
+                <input type="text" class="form-control my-3" placeholder="Nombre">
+                <input type="email" class="form-control my-3" placeholder="Email">
+                <textarea class="form-control my-3" placeholder="Mensaje"></textarea>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3">
+        <p>Síguenos en nuestras redes sociales</p>
+        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
