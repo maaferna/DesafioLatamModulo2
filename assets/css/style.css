@@ -1,0 +1,497 @@
+@charset "UTF-8";
+:root {
+  --bs-background-header: #373A3C;
+  --bs-background-footer: #DC3545;
+  --bs-background: #FFFFFF;
+  --bs-background-light: #F8F9FA;
+  --bs-background-gray-dark: #373A3C;
+  --bs-background-success: #28a745;
+  --bs-border: #1C7CD5;
+  --bs-fontcolor-price: #707070;
+  --bs-fontcolor: #f0ede6;
+  --bs-font-card-title: #212529;
+}
+
+body {
+    font-family: 'Cabin', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding-top: 4em;
+}
+
+header {
+    margin-bottom: 2em;
+    background-color: var(--bs-background-header);
+}
+
+.footer {
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    opacity: 1;
+    background-color: var(--bs-background-footer);
+    text-align: center;
+    padding: 40px 20px;
+    width: 100%;
+    color: var(--bs-fontcolor);
+    height: 534px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.footer-container {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #DC3545;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-title {
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer-subtitle {
+    font-family: 'Lobster', normal;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-highlight {
+    font-family: 'Lobster', cursive;
+}
+
+.footer-button {
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-button:hover {
+    background-color: #C0C0C0;
+}
+
+.sub-footer {
+  background-color: #373A3C;
+   width: 100%;
+   padding: 15px 0;
+   text-align: center;
+   font-size: 20px;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sub-footer-text {
+    font-family: 'Lobster', normal;
+    font-size: 37px;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.sub-footer-name {
+  height: 3rem;
+}
+
+.footer p {
+    color: #fff;
+}
+
+header.navbar {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.navbar-brand {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 37px;
+}
+
+.main-title {
+    font-size: 40px;
+    text-align: left;
+    font-weight: bold;
+    opacity: 1;
+}
+
+
+.custom-hr {
+    height: 3px;
+    background-color: black;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.navbar-toggler {
+    border-color: white;
+    margin-right: 60px;
+}
+
+.navbar-brand img {
+    height: 2em;
+    margin-top: -0.5em;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.row-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.formulario-section {
+    padding: 20px;
+    background-color: var(--bs-background-medio-pago-info);
+    text-align: center;
+    margin-bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.icons-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.icons-section li {
+    margin: 10px;
+    color: var(--bs-fontcolor);
+}
+
+.formulario-section h2 {
+    color: var(--bs-fontcolor);
+    font-size: 21px;
+}
+
+.icons-section i {
+    font-size: 40;
+}
+
+.nav-link {
+    color: var(--bs-fontcolor);
+}
+
+.nav-item {
+    font-size: 16px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.img-pizza {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-custom-w, .btn-custom-b, .btn-custom-triangle {
+    height: 75px;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    white-space: normal;
+    overflow: hidden;  // Prevents text from overflowing
+    text-overflow: ellipsis;  // Adds an ellipsis if text overflows
+}
+
+.btn-custom-w, .btn-custom-b {
+    padding: 0.5rem 2rem;
+    margin: 1px 2px;
+    display: inline-block;
+    font-size: 16px;
+    text-align: left;
+    font-family: 'Cabin', sans-serif;
+    width: auto;
+}
+
+.btn-custom-b {
+    position: relative;
+    background-color: #000000;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    padding: 0 4rem;
+    width:50%;
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    overflow: visible;
+}
+
+.btn-custom-b::before {
+    content: '';
+    position: absolute;
+    left: 25%;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #000000 transparent; /
+    transform: translateX(-50%);
+}
+
+.btn-custom-triangle {
+    position: relative;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px 10px 40px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    display: inline-block;
+    margin-right: 10px;
+    overflow: visible;
+}
+
+.btn-custom-triangle::before {
+    content: '';
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent black transparent transparent;
+}
+
+
+.button-row {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+}
+
+
+.button-row .col-md-4 {
+    padding: 0 5px;
+}
+
+.button-row .col-12 {
+    padding: 0 15px;
+}
+
+.btn-custom-w {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 2px solid black;
+}
+
+.btn-custom-w:hover {
+    background-color: #f0f0f0;
+}
+
+.btn-custom-b {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+        position: relative;
+
+}
+
+.btn-custom-b:hover {
+    background-color: #333333;
+}
+
+.carousel-controls-custom {
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    position: static;
+    margin: 0 10px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-control-prev.active, .carousel-control-next.active {
+    background-color: black;
+}
+
+
+.carousel {
+    position: relative;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: auto;
+    bottom: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--bs-background-light);
+    border-radius: 50%;
+    color: transparent;
+    border: 2px solid var(--bs-background-gray-dark);
+}
+
+.carousel-control-prev {
+    left: calc(50% - 40px);
+}
+
+.carousel-control-next {
+    left: calc(50% + 10px);
+}
+
+.carousel-control-prev.active,
+.carousel-control-next.active {
+    background-color: black;
+}
+
+.carousel-control-prev:not(.active),
+.carousel-control-next:not(.active) {
+    background-color: white;
+}
+
+.carousel-control-prev:not(.active):hover,
+.carousel-control-next:not(.active):hover {
+    background-color: #ccc;
+}
+
+
+.carousel-control-prev span,
+.carousel-control-next span {
+    display: none;
+}
+
+
+
+.carousel-container {
+    padding-top: 4rem;
+}
+
+.section-title {
+    font-family: 'Cabin', cursive;
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.section-header {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.ingredients-list p, .preparation-steps p {
+     margin-bottom: 15px;
+     font-family: 'Cabin', sans-serif;
+     font-size: 20px;
+}
+
+#section-title {
+    font-family: 'Cabin', sans-serif;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+
+@media (min-width: 768px) {
+    .button-row {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        margin-left: auto;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .btn-custom-b,
+    .btn-custom-triangle {
+        display: none;
+    }
+    .main-title {
+        text-align: center;
+    }
+    .btn-custom-w, .btn-custom-b, .btn-custom-triangle {
+        padding: 10px 15px;
+        font-size: 14px;
+        flex-grow: 1;
+        text-align: center;
+    }
+}
+
+/* Ocultar en tamaños xs y sm */
+@media (max-width: 767px) {
+    .carousel-container {
+        display: none;
+    }
+}
