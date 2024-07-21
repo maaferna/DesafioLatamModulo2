@@ -270,6 +270,30 @@ h1, .footer-title {
     margin-right: 0;
 }
 
+.footer-custom {
+    background-color: var(--bs-card-body);
+    color: white;
+    text-align: center;
+    padding: 40px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.footer-custom p {
+    margin-bottom: 10px;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.social-icon {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.social-icon:hover {
+    color: #ccc;
+    transition: color 0.3s ease;
+}
 
 
 @media (max-width: 992px) {
@@ -289,5 +313,11 @@ h1, .footer-title {
     .container-fluid {
         padding-right: 10px;
         padding-left: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .social-icon {
+        margin: 0.5rem 0;
     }
 }
