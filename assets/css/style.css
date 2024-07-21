@@ -178,8 +178,8 @@ h1, .footer-title {
     padding: 15px;
     color: white !important;
     background-color: var(--bs-card-body) !important;
+    height: 12rem;
 }
-
 
 .card-img {
   width: 100%;
@@ -215,6 +215,62 @@ h1, .footer-title {
 .bg-dark {
   background-color: #000!important;
 }
+
+/* Contacto Section */
+.contact-section {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.contact-header {
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.form-label {
+    color: #ccc;
+    font-size: 1.2rem;
+}
+
+.form-control {
+    background-color: white;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.form-control:focus {
+    background-color: transparent;
+    border-color: #00aaff;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: var(--bs-card-body);
+    border: none;
+    width: 10vw;
+    height: 2rem;
+}
+
+.btn-primary:hover {
+    background-color: #0088cc;
+}
+
+.custom-hr-container {
+    width: 100%;
+    padding: 20px;
+}
+
+.custom-hr {
+    width: 100%;
+    height: 2px;
+    background-color: #008000;
+    border: none;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+
 
 @media (max-width: 992px) {
     .navbar-collapse {

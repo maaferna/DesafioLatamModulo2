@@ -56,6 +56,9 @@
   </header>
     <main>
       <section class="mt-0">
+        <div class="custom-hr-container">
+            <hr class="custom-hr">
+        </div>
         <div class="container-fluid text-white">
           <div class="row row-card">
             <div class="col-sm-3">
@@ -97,37 +100,32 @@
           </div>
         </div>
       </section>
-        <section id="quienes-somos" class="my-5">
-            <h2>¿Quiénes Somos?</h2>
-            <p>Lorem ipsum dolor sit amet...</p>
-        </section>
-
-        <section id="destacados" class="my-5">
-            <h2>Destacados</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="assets/img/destacado1.jpg" class="card-img-top" alt="Destacado 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Destacado 1</h5>
-                            <p class="card-text">Descripción breve del destacado.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="contacto" class="my-5">
-            <h2>Contacto</h2>
-            <form>
-                <input type="text" class="form-control my-3" placeholder="Nombre">
-                <input type="email" class="form-control my-3" placeholder="Email">
-                <textarea class="form-control my-3" placeholder="Mensaje"></textarea>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
-        </section>
+      <section id="contacto" class="contact-section">
+          <div class="container">
+              <h2 class="contact-header text-center">CONTACTO</h2>
+              <div class="custom-hr-container">
+                  <hr class="custom-hr">
+              </div>
+              <form>
+                  <div class="mb-3">
+                      <label for="nombre" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                  </div>
+                  <div class="mb-3">
+                      <label for="asunto" class="form-label">Asunto</label>
+                      <input type="text" class="form-control" id="asunto" placeholder="Asunto">
+                  </div>
+                  <div class="mb-3">
+                      <label for="mensaje" class="form-label">Mensaje</label>
+                      <textarea class="form-control" id="mensaje" rows="3" placeholder="Mensaje"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+          </div>
+      </section>
     </main>
 
-    <footer class="bg-dark text-white text-center p-3">
+    <footer class="footer-custom">
         <p>Síguenos en nuestras redes sociales</p>
         <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
     </footer>
