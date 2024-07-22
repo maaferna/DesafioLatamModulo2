@@ -240,9 +240,21 @@ h1, .footer-title {
 }
 
 .form-control:focus {
-    background-color: transparent;
-    border-color: #00aaff;
+    border-color: #00aaf;
     box-shadow: none;
+}
+
+input, textarea, select {
+    background-color: #fcfcfc;
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus, select:focus {
+    background-color: #f9f9f9;
+    border-color: #a1cdf1;/
+    outline: none; 
 }
 
 .btn-primary {
