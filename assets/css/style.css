@@ -254,8 +254,19 @@ input, textarea, select {
 input:focus, textarea:focus, select:focus {
     background-color: #f9f9f9;
     border-color: #a1cdf1;/
-    outline: none; 
+    outline: none;
 }
+
+#quienes-somos {
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#quienes-somos h2 {
+    text-align: center;
+}
+
 
 .btn-primary {
     background-color: var(--bs-card-body);
@@ -305,6 +316,28 @@ input:focus, textarea:focus, select:focus {
 .social-icon:hover {
     color: #ccc;
     transition: color 0.3s ease;
+}
+
+
+.card-header, .card-body {
+    color: white;
+}
+
+.card {
+    border: none;
+}
+
+.custom-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bs-card-body);
+    color: white;
+    padding: 10px;
+}
+
+.custom-body {
+  background-color: black !important;
 }
 
 

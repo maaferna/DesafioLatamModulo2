@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     titles.forEach(title => {
         title.addEventListener('click', function() {
-            let paragraph = this.nextElementSibling; 
+            let paragraph = this.nextElementSibling;
             if (paragraph.style.display === "none") {
                 paragraph.style.display = "block";
             } else {
@@ -37,6 +37,31 @@ document.addEventListener("DOMContentLoaded", function() {
             let targetId = this.getAttribute('href');
             let targetSection = document.querySelector(targetId);
             targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+    });
+});
+
+
+function toggleParagraph() {
+    var content = document.getElementById("quienes-somos-content");
+    if (content.style.display === "none") {
+        content.style.display = "block";
+    } else {
+        content.style.display = "none";
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    const icons = document.querySelectorAll('.clickable-icon');
+
+    icons.forEach(icon => {
+        icon.addEventListener('click', function () {
+            const cardBody = this.closest('.card').querySelector('.card-text');
+            if (cardBody.style.display === 'none') {
+                cardBody.style.display = 'block';
+            } else {
+                cardBody.style.display = 'none';  
+            }
         });
     });
 });
